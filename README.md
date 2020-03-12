@@ -23,6 +23,8 @@ HPDBSCAN follows the standard CMake project conventions. Create a build director
 mkdir build && cd build && cmake .. && make
 ```
 
+If you need python3, set `-DPYTHON_EXECUTABLE="path/to/python3"` as an option to cmake above.
+
 The provided CMake script checks, but does not install, all of the necessary dependencies listed above. If no MPI installation is present on the system, an OpenMP-only (i.e. thread-based) version is built.
 
 ## Usage
